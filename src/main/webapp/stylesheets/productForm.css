@@ -1,0 +1,129 @@
+@charset "ISO-8859-1";
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap')
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	color: #fff;
+}
+h2{
+	padding-bottom:10px;
+	margin-bottom: 10px;
+	text-align:center;
+}
+
+.mb-3 {
+	margin-bottom: 15px;
+}
+
+.relative {
+	position: relative;
+}
+
+.opacity-0 {
+	opacity: 0;
+}
+
+.stroke-current {
+	stroke: #ffffff;
+	z-index: 999;
+}
+
+#supportCheckbox:checked ~ div span {
+	opacity: 1;
+}
+
+#supportCheckbox:checked ~ div {
+	background: #6a64f1;
+	border-color: #6a64f1;
+}
+
+.main-wrapper {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.form-wrapper {
+	margin: 0 auto;
+	max-width: 570px;
+	width: 100%;
+	padding: 0 40px;
+}
+
+.img {
+	display: block;
+	margin: 0 auto 45px;
+}
+
+.input-wrapp>div {
+	display: flex;
+	gap: 20px;
+}
+
+.input-flex {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 15px;
+}
+
+.input-flex>div {
+	width: 50%;
+}
+
+.form-input {
+	width: 100%;
+	padding: 13px 22px;
+	border-radius: 5px;
+	border: 1px solid #9e97b3;
+	background: #444;
+	font-weight: 500;
+	font-size: 16px;
+	color: #fff;
+	outline: none;
+	resize: none;
+	transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+    border-color: #b34aff;
+    box-shadow: 0px 3px 8px rgba(191, 74, 255, 0.7);
+}
+
+.form-label {
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.add-game-btn {
+	font-size: 16px;
+	border-radius: 5px;
+	padding: 12px;
+	border: none;
+	font-weight: 500;
+	background-color: #C63C3C;
+	color: white;
+	cursor: pointer;
+	width: 100%
+}
+
+.btn:hover {
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.w-45 {
+	width: 45%;
+}

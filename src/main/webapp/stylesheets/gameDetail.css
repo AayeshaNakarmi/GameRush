@@ -1,0 +1,129 @@
+@charset "ISO-8859-1";
+
+/* Basic Styling */
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 15px;
+	display: flex;
+	margin-bottom: 0;
+}
+
+/* Columns */
+.left-column {
+	width: 50%;
+	position: relative;
+	display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.right-column {
+	width: 35%;
+	margin: 0 auto;
+	margin-top: 7em;
+	margin-right: 10em;
+}
+
+/* Left Column */
+.left-column img {
+	width: 400px; /* Set your desired width */
+	height: 250px;
+	transition: all 0.3s ease;
+	border-radius:1em;
+	margin-top:6em;
+}
+
+/* Product Description */
+.product-description {
+	border-bottom: 1px solid #5d5d5d;
+	margin-bottom: 3em;
+}
+
+.product-description span {
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.game-title {
+	color: #467c2b;
+}
+
+.release-date {
+	color: #838383;
+}
+
+.product-description h1 {
+	font-weight: 300;
+	font-size: 52px;
+	color: #c7c7c7;
+	letter-spacing: -2px;
+}
+
+.product-description p {
+	font-size: 16px;
+	font-weight: 300;
+	color: #939393;
+	line-height: 24px;
+	margin-bottom: 2em;
+}
+
+/* Product Price */
+.product-price {
+	display: flex;
+	align-items: center;
+}
+
+.product-price span {
+	font-size: 26px;
+	font-weight: 300;
+	color: #c7c7c7;
+	margin-right: 20px;
+}
+
+.cart-btn {
+	display: inline-block;
+	background-color: #2ea40a;
+	border-radius: 6px;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 12px 30px;
+	transition: all .5s;
+}
+
+.cart-btn:hover {
+	background-color: #64af3d;
+}
+
+/* Responsive */
+@media ( max-width : 940px) {
+	.container {
+		flex-direction: column;
+		margin-top: 60px;
+	}
+	.left-column, .right-column {
+		width: 100%;
+	}
+	.left-column img {
+		width: 300px;
+		right: 0;
+		top: -65px;
+		left: initial;
+	}
+}
+
+@media ( max-width : 535px) {
+	.left-column img {
+		width: 220px;
+		top: -85px;
+	}
+}
